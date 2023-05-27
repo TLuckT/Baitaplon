@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Đăng nhập</title>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <script>
+        function index(){
+    event.preventDefault();
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var user = localStorage.getItem(username);
+    var data = JSON.parse(user);
+    if(user ==null){
+        alert("vui lòng nhập username password")
+    }
+    else if(username ==data.username && password ==data.password){
+        alert("đăng nhập thành công")
+        window.location.href="index.html"
+    }
+    else{
+        alert("sai tài khoản hoặc mật khẩu")
+    }
+}
+    </script>
+<body>
+    <div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Login Here</h1>
+        <form onsubmit="index()">
+            <p>Username</p>
+            <input type="text" id="username" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" id="password" placeholder="Enter Password">
+            <input type="submit" name="" value="Đăng nhập">
+            <a href="#">Lost your password?</a><br>
+            <a href="./index (5).html">Don't have an account?</a>
+        </form>
+        
+    </div>
+
+</body>
+</head>
+</html>

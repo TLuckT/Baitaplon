@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #wp-products {
+    padding-top:70px;
+    padding-bottom: 78px;
+    padding-left:134px;
+    padding-right:134px;
+    }
+
+    #wp-products h2 {
+    text-align:center;
+    margin-bottom: 76px;
+    font-size:32px;
+    color:#626a67;
+    }
+
+
+    #list-products {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items:left;
+    flex-wrap: wrap;
+    }
+
+    #list-products .box-left {
+    width: 50%;
+    height: 770px;
+    background-color: #ffffff98;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    }
+
+    #list-products .box-left img {
+    display:left;
+    margin:0px auto;
+    width: 60%;
+    }
+
+    #list-products .box-left .stars {
+    display: block;
+    margin:10px;
+    width: 30%;
+    height: 30px;
+    }
+
+    #list-products .box-left .stars .img {
+    cursor: pointer;
+    margin-right: 10px;
+    align-items: center;
+    vertical-align: top;
+    }
+
+    #list-products .box-right {
+    width: 50%;
+    height: 700px;
+    padding-top:70px;
+    background-color: #ffffff98;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    }
+
+    #list-products .box-right .name {
+    text-align:Left;
+    font-size:30px;
+    color: rgb(12, 4, 4);
+    font-weight: bold;
+    margin-top:5px;
+    }
+
+    #list-products .box-right .desc {
+    text-align:Left;
+    color: rgb(12, 4, 4);
+    }
+
+    #list-products .box-right .configuration {
+    text-align: Left;
+    padding-top:20px;
+    color: rgb(12, 4, 4);
+    font-weight: bold;
+    margin-top:5px;
+    }
+
+    #list-products .box-right .price {
+    font-weight: bold;
+    margin-top:9px;
+    background-color:#f5f5f5;
+    width: 40%;
+    height: 15%;
+    font-size: 18px;
+    padding: 20px 20px 10px 0px;
+    }
+</style>
+<link rel="stylesheet"  href="./test.css" type="text/css">
+<body>
+    <header>
+        <div class="hh">
+            <div class="row">
+                <div class="col-2 menu">
+                    <img src="./logo.png" height="90px" width="250px">
+                </div>
+                <div class="col-2">
+
+                </div>
+                <div class="col-8 menu">
+                    <ul class="root">
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li><a href="./index (2).html">Góp ý</a></li>
+                        <li><a href="./index (1).html">Gửi yêu cầu bảo hành</a></li>
+                        <li><a href="#">Giỏ hàng</a></li>
+                        <li><a href="./index (3).html"><img src="./dangnhap.jpg"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   </header>
+    <div id="wp-products">
+        <h2>THÔNG TIN SẢN PHẨM CỦA BẠN</h2>
+        <ul id="list-products">
+            <div class="box-left">
+                <img src="./ảnh 2.jpg" alt="">
+                <div class="stars">
+                    <span>
+                        <img src="./ảnh 10.jpg" alt=""> 
+                </div>
+            </div>
+            <div class="box-right">
+                <div class="name">Mã SP: LTAU682</div>
+                <div class="desc">Thông số sản phẩm</div>
+                <div class="configuration">
+                    &#9900; CPU: AMD R7 5800H<br>
+                    &#9900; RAM: 16GB<br>
+                    &#9900; Ổ cứng: 512GB SSD<br>
+                    &#9900; VGA: NVIDIA RTX3050 4GB<br>
+                    &#9900; Màn hình: 15.6 Oled FHD<br>
+                    &#9900; HĐH: Win 11<br>
+                    &#9900; Màu: Bạc
+                </div>
+                <div class="price">
+                    <p style="margin-top: -5px">Giá cũ:</p>
+                        <p>29.999.000 VND</p>
+                    <p style="margin-top: 5px; font-size: 24px; color: red">Giá khuyến mại:</p>
+                        <i size="26px">24.999.000 VND</i><br>
+                </div>
+                <div class="price">
+                    <div style="background-color: #f5f5f5; width: 100%; display:block;">
+                        <div>ĐĂNG KÝ NHẬN THÔNG TIN KHI CÓ HÀNG</div>
+                        <div style="background-color: #f5f5f5; width: 100%;">
+                            <input type="text" size="45"  placeholder="Họ và tên" style="height: 30px;"><br><br>
+                            <input type="text" size="45"  placeholder="Số điện thoại (bắt buộc)" style="height: 30px;"><br><br>
+                            <input type="text" size="45"  placeholder="Email" style="height: 30px;"><br><br>
+                            <input type="button" style="background-color: red; display:block; font-size: 20px; width: 100%;" value="Đăng ký nhận thông tin">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <table class="footer">
+        <tr>
+            <td class="csbh" colspan="2">Chính sách bảo hành: <br>
+                &#9900; Các thiết bị mua tại LUCK TECHNOLOGY đều được bảo hành thời gian<br>
+                BH quy định cho từng thiết bị được dán tem trên thiết bị.<br>
+                &#9900; Thiết bị được BH là những thiết bị còn nguyên tem. Không bị ngậm nước, cháy nổ, va đập.</td>
+            <td class="lh" colspan="2">
+                Địa chỉ: Châu phong - Liên Hà - Đông Anh - Hà Nội<br>
+                Số đt: 0988536758<br>
+                Email: luck@gmai.com
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

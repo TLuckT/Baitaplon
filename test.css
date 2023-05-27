@@ -182,7 +182,7 @@ a{
     body{
         margin: 0;
         padding: 0;
-        background-image: url(./bgcolor.jpg);
+        background-image: url(bgcolor.jpg);
         background-size: 100%;
         background-position: center;
         font-family: sans-serif;
